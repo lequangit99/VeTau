@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+    <TextView
+        android:id="@+id/txt_gadi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Ga đi"/>
+    <EditText
+        android:id="@+id/edt_gadi"
+        android:layout_below="@+id/txt_gadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:hint="Tên ga đi"
+        >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/txt_gaden"
+        android:layout_below="@+id/edt_gadi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Ga đến"/>
+    <EditText
+        android:id="@+id/edt_gaden"
+        android:layout_below="@+id/txt_gaden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:hint="Tên ga đi"
+        >
+
+    </EditText>
+    <TextView
+        android:id="@+id/txt_dongia"
+        android:layout_below="@+id/edt_gaden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Đơn giá"/>
+    <EditText
+        android:id="@+id/edt_dongia"
+        android:layout_below="@+id/txt_dongia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:hint="Đơn Giá"
+        >
+
+    </EditText>
+    <RadioGroup
+        android:id="@+id/radio_gr"
+        android:layout_below="@+id/edt_dongia"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rdt_motChieu"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Một chiều"
+                >
+
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/rdt_khuHoi"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khứ hồi"
+                >
+
+            </RadioButton>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_below="@id/radio_gr"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_dongY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng ý">
+
+        </Button>
+        <Button
+            android:id="@+id/btn_quayVe"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay về">
+
+        </Button>
+    </LinearLayout>
+</RelativeLayout>

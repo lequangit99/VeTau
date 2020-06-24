@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_gadi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="gadi"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="->"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/item_gaDen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="gaden"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/item_Gia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="gia"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_loaiVe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:text="loaive"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+</RelativeLayout>
